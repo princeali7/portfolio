@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ali Raza — Developer</title>
-  <meta name="description" content="Ali Raza — Shopify and full-stack developer in Dubai. Shopify apps, Next.js products, AI features, macOS apps and browser extensions.">
+  <title>Ali Raza — Full-Stack Developer</title>
+  <meta name="description" content="Ali Raza — full-stack developer (React, Next.js, Node.js, Shopify) in Dubai. Shopify apps, Next.js products, AI features, macOS apps and browser extensions.">
   <meta name="color-scheme" content="dark">
-  <meta property="og:title" content="Ali Raza — Developer">
-  <meta property="og:description" content="Shopify and full-stack developer. Shopify apps, Next.js products, AI features, macOS apps and browser extensions.">
+  <meta property="og:title" content="Ali Raza — Full-Stack Developer">
+  <meta property="og:description" content="Full-stack developer: React, Next.js, Node.js and Shopify. Shopify apps, Next.js products, AI features, macOS apps and browser extensions.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23d4ff3a'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%230a0a0b'%3EAR%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,10 +73,13 @@
     .clients li { display: grid; grid-template-columns: 220px 1fr auto; gap: 24px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid var(--line); }
     .clients strong { font-weight: 500; font-size: 18px; }
     .clients p { color: var(--ink-2); font-size: 15px; }
-    .clients a { font-family: var(--mono); font-size: 13px; color: var(--ink-3); text-decoration: none; }
+    .clients a, .clients .yr { font-family: var(--mono); font-size: 13px; color: var(--ink-3); text-decoration: none; }
     .clients a:hover { color: var(--accent); }
 
     .xp { display: grid; grid-template-columns: 220px 1fr; gap: 24px; }
+    .xp + .xp { margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--line); }
+    .xp .at { font-family: var(--mono); font-size: 13px; color: var(--ink-3); margin-top: 6px; }
+    .sub { font-size: 20px; font-weight: 500; margin: 64px 0 20px; }
     .xp .when { font-family: var(--mono); color: var(--ink-3); font-size: 14px; }
     .xp h3 { font-size: 24px; font-weight: 500; }
     .xp p { color: var(--ink-2); font-size: 17px; margin-top: 12px; max-width: 680px; }
@@ -110,6 +113,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li class="hide-sm"><a href="#clients">Client work</a></li>
+          <li class="hide-sm"><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -120,7 +124,7 @@
     <div class="hero" id="top">
       <div class="wrap">
         <span class="kicker">Developer · Dubai, UAE</span>
-        <h1>Ali Raza.<br><em>Shopify &amp; full-stack developer.</em></h1>
+        <h1>Ali Raza.<br><em>Full-stack developer.</em></h1>
         <p class="lede">I build Shopify stores and apps, Next.js products, AI-powered features, macOS apps and browser extensions. Eight years of shipping production code for D2C brands.</p>
         <div class="ctas">
           <a class="btn btn--primary" href="#projects">See my work →</a>
@@ -130,7 +134,7 @@
           <div><strong>8 yrs</strong><span>shipping production code</span></div>
           <div><strong>500+</strong><span>Shopify stores worked on</span></div>
           <div><strong>2</strong><span>apps on the Shopify App Store</span></div>
-          <div><strong>3</strong><span>desktop apps &amp; extensions</span></div>
+          <div><strong>4.9★</strong><span>175 Upwork reviews, 235 jobs</span></div>
         </div>
       </div>
     </div>
@@ -153,12 +157,12 @@
           <div class="card">
             <div class="meta">03</div>
             <h3>Frontend</h3>
-            <ul class="chips"><li>React</li><li>Next.js</li><li>Remix</li><li>Vite</li><li>Tailwind CSS</li><li>Framer Motion</li><li>Three.js</li></ul>
+            <ul class="chips"><li>React</li><li>Next.js</li><li>Vue.js</li><li>Remix</li><li>Vite</li><li>Tailwind CSS</li><li>Framer Motion</li><li>Three.js</li></ul>
           </div>
           <div class="card">
             <div class="meta">04</div>
             <h3>Backend &amp; data</h3>
-            <ul class="chips"><li>Node.js</li><li>Express</li><li>GraphQL / Apollo</li><li>REST APIs</li><li>Socket.io</li><li>Prisma</li><li>Drizzle</li><li>PostgreSQL</li><li>Supabase</li><li>Zod</li></ul>
+            <ul class="chips"><li>Node.js</li><li>Express</li><li>Medusa.js</li><li>NetSuite</li><li>FarApp</li><li>GraphQL / Apollo</li><li>REST APIs</li><li>Socket.io</li><li>Prisma</li><li>Drizzle</li><li>PostgreSQL</li><li>Supabase</li><li>Zod</li></ul>
           </div>
           <div class="card">
             <div class="meta">05</div>
@@ -233,6 +237,14 @@
           <li><strong>Motive Health</strong><p>Funnel restructure and an iterative A/B test program for an FDA-cleared device.</p><a href="https://mymotive.com">mymotive.com</a></li>
           <li><strong>FriendshipCollar</strong><p>Full redesign and speed rebuild for a pet-and-owner accessories brand.</p><a href="https://friendshipcollar.com">friendshipcollar.com</a></li>
         </ul>
+        <h3 class="sub">Selected Upwork projects</h3>
+        <ul class="clients">
+          <li><strong>Pick-up &amp; delivery app</strong><p>Custom Shopify app letting shoppers choose pick-up, local delivery or shipping. Supported for almost four years. 5.0★: “Ali is very good at his craft and was able to accomplish what we wanted to do.”</p><span class="yr">2019 — 2023</span></li>
+          <li><strong>Auto Disc Pro</strong><p>Shopify app that discounts products automatically.</p><span class="yr">2020 — 2021</span></li>
+          <li><strong>Discount Trade For Share</strong><p>Point-of-sale MVP app for Shopify, built from the client’s process flows.</p><span class="yr">2017 — 2019</span></li>
+          <li><strong>Product walkthrough app</strong><p>Interactive product walkthrough for a custom Shopify theme.</p><span class="yr">2018 — 2019</span></li>
+          <li><strong>React &amp; Polaris app UI</strong><p>Built the UI and front end of a Shopify app alongside the client’s lead developer. 5.0★</p><span class="yr">2018 — 2019</span></li>
+        </ul>
       </div>
     </section>
 
@@ -247,6 +259,21 @@
             <p>Designing and building Shopify and headless stores for D2C brands, plus our own Shopify apps, a macOS app and browser extensions. Hands-on across themes, apps, backend and performance.</p>
           </div>
         </div>
+        <div class="xp">
+          <div class="when">Now</div>
+          <div>
+            <h3>Integration manager, L-Nutra</h3>
+            <p>Building and running the e-commerce integrations that connect Shopify, NetSuite and FarApp.</p>
+          </div>
+        </div>
+        <div class="xp">
+          <div class="when">2017 — now</div>
+          <div>
+            <h3>Senior web developer, freelance</h3>
+            <div class="at">Infinity Creatives LLC · Upwork</div>
+            <p>235 jobs and 1,600+ hours on Upwork with a 4.9 rating from 175 reviews. Custom Shopify apps, theme work, React and Polaris app UIs, and WordPress / WooCommerce builds for clients worldwide.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -255,7 +282,10 @@
         <span class="kicker">Contact</span>
         <h2>Let's <em>build something</em>.</h2>
         <div class="ctas">
-          <a class="btn btn--primary" href="https://github.com/princeali7">GitHub →</a>
+          <a class="btn btn--primary" href="Ali-Raza-Resume.pdf">Download résumé →</a>
+          <a class="btn" href="https://github.com/princeali7">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/ali-raza-minhas/">LinkedIn</a>
+          <a class="btn" href="https://www.upwork.com/freelancers/aliraza2">Upwork</a>
         </div>
       </div>
     </section>
