@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ali Raza — Developer</title>
+  <meta name="description" content="Ali Raza — Shopify and full-stack developer in Dubai. Shopify apps, Next.js products, AI features, macOS apps and browser extensions.">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:title" content="Ali Raza — Developer">
+  <meta property="og:description" content="Shopify and full-stack developer. Shopify apps, Next.js products, AI features, macOS apps and browser extensions.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23d4ff3a'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%230a0a0b'%3EAR%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0b; --bg-2: #111114; --line: rgba(255,255,255,.08); --line-2: rgba(255,255,255,.14);
+      --ink: #f5f5f4; --ink-2: rgba(245,245,244,.72); --ink-3: rgba(245,245,244,.55);
+      --accent: #d4ff3a; --accent-ink: #0a0a0b;
+      --sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --mono: "Geist Mono", ui-monospace, SFMono-Regular, monospace;
+      --serif: "Instrument Serif", "Times New Roman", serif;
+      --gutter: 32px;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html { scroll-behavior: smooth; background: var(--bg); }
+    body { background: var(--bg); color: var(--ink); font: 16px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 var(--gutter); }
+    .skip { position: absolute; left: 8px; top: -48px; background: var(--accent); color: var(--accent-ink); padding: 8px 14px; border-radius: 4px; }
+    .skip:focus { top: 8px; }
+
+    header { position: sticky; top: 0; z-index: 10; background: rgba(10,10,11,.8); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-family: var(--mono); font-weight: 500; text-decoration: none; }
+    .logo span { color: var(--accent); }
+    nav ul { display: flex; gap: 24px; list-style: none; padding: 0; }
+    nav a { color: var(--ink-2); text-decoration: none; font-size: 14px; }
+    nav a:hover { color: var(--ink); }
+
+    .hero { padding: 120px 0 100px; position: relative; overflow: hidden; }
+    .hero::before { content: ""; position: absolute; inset: -40% 20% auto auto; width: 640px; height: 640px; background: radial-gradient(circle, rgba(212,255,58,.14), transparent 65%); pointer-events: none; }
+    .kicker { font-family: var(--mono); font-size: 12px; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-3); display: inline-flex; align-items: center; gap: 10px; }
+    .kicker::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+    h1 { font-size: clamp(44px, 8vw, 96px); line-height: 1; letter-spacing: -.04em; font-weight: 500; margin-top: 24px; }
+    h1 em, h2 em { font-family: var(--serif); font-weight: 400; color: var(--accent); letter-spacing: -.01em; }
+    .lede { max-width: 640px; font-size: 20px; color: var(--ink-2); margin-top: 28px; }
+    .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 20px; border-radius: 999px; font-size: 15px; font-weight: 500; text-decoration: none; border: 1px solid var(--line-2); }
+    .btn--primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+    .btn:hover { transform: translateY(-1px); }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; margin-top: 72px; }
+    .stats div { background: var(--bg); padding: 24px; }
+    .stats strong { display: block; font-size: 32px; font-weight: 500; letter-spacing: -.03em; }
+    .stats span { font-size: 14px; color: var(--ink-3); }
+
+    section { padding: 100px 0; border-top: 1px solid var(--line); }
+    section.alt { background: var(--bg-2); }
+    h2 { font-size: clamp(32px, 5vw, 56px); line-height: 1.05; letter-spacing: -.03em; font-weight: 500; margin: 20px 0 48px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+    .card { border: 1px solid var(--line); border-radius: 6px; padding: 28px; background: var(--bg); }
+    section.alt .card { background: var(--bg-2); }
+    .card h3 { font-size: 20px; font-weight: 500; letter-spacing: -.01em; }
+    .card p { color: var(--ink-2); font-size: 15px; margin-top: 10px; }
+    .meta { font-family: var(--mono); font-size: 12px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 10px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin-top: 16px; }
+    .chips li { font-family: var(--mono); font-size: 12px; padding: 6px 12px; border: 1px solid var(--line-2); border-radius: 999px; color: var(--ink-2); }
+    .card a.more { display: inline-block; margin-top: 16px; font-size: 14px; color: var(--accent); text-decoration: none; }
+    .card a.more:hover { text-decoration: underline; }
+
+    .clients { list-style: none; padding: 0; border-top: 1px solid var(--line); }
+    .clients li { display: grid; grid-template-columns: 220px 1fr auto; gap: 24px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid var(--line); }
+    .clients strong { font-weight: 500; font-size: 18px; }
+    .clients p { color: var(--ink-2); font-size: 15px; }
+    .clients a { font-family: var(--mono); font-size: 13px; color: var(--ink-3); text-decoration: none; }
+    .clients a:hover { color: var(--accent); }
+
+    .xp { display: grid; grid-template-columns: 220px 1fr; gap: 24px; }
+    .xp .when { font-family: var(--mono); color: var(--ink-3); font-size: 14px; }
+    .xp h3 { font-size: 24px; font-weight: 500; }
+    .xp p { color: var(--ink-2); font-size: 17px; margin-top: 12px; max-width: 680px; }
+
+    .contact { text-align: center; padding: 120px 0; }
+    .contact h2 { margin-bottom: 24px; }
+    .contact .ctas { justify-content: center; }
+    footer { border-top: 1px solid var(--line); padding: 32px 0; color: var(--ink-3); font-size: 14px; }
+
+    @media (max-width: 760px) {
+      :root { --gutter: 16px; }
+      nav ul { gap: 16px; }
+      nav li.hide-sm { display: none; }
+      .hero { padding: 72px 0 64px; }
+      .lede { font-size: 18px; }
+      .stats { grid-template-columns: repeat(2, 1fr); margin-top: 48px; }
+      section { padding: 72px 0; }
+      .grid { grid-template-columns: 1fr; }
+      .clients li, .xp { grid-template-columns: 1fr; gap: 6px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn:hover { transform: none; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap">
+      <a class="logo" href="#top">ali<span>.</span>is-a.dev</a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li class="hide-sm"><a href="#clients">Client work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="hero" id="top">
+      <div class="wrap">
+        <span class="kicker">Developer · Dubai, UAE</span>
+        <h1>Ali Raza.<br><em>Shopify &amp; full-stack developer.</em></h1>
+        <p class="lede">I build Shopify stores and apps, Next.js products, AI-powered features, macOS apps and browser extensions. Eight years of shipping production code for D2C brands.</p>
+        <div class="ctas">
+          <a class="btn btn--primary" href="#projects">See my work →</a>
+          <a class="btn" href="https://github.com/princeali7">GitHub</a>
+        </div>
+        <div class="stats">
+          <div><strong>8 yrs</strong><span>shipping production code</span></div>
+          <div><strong>500+</strong><span>Shopify stores worked on</span></div>
+          <div><strong>2</strong><span>apps on the Shopify App Store</span></div>
+          <div><strong>3</strong><span>desktop apps &amp; extensions</span></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="skills" class="alt">
+      <div class="wrap">
+        <span class="kicker">Skills</span>
+        <h2>What I <em>build with</em>.</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="meta">01</div>
+            <h3>Languages</h3>
+            <ul class="chips"><li>TypeScript</li><li>JavaScript</li><li>Liquid</li><li>Swift</li><li>SQL</li><li>HTML &amp; CSS</li></ul>
+          </div>
+          <div class="card">
+            <div class="meta">02</div>
+            <h3>Shopify</h3>
+            <ul class="chips"><li>Shopify Plus</li><li>Liquid themes</li><li>Online Store 2.0</li><li>Shopify apps</li><li>Polaris</li><li>App Bridge</li><li>Shopify CLI</li><li>Admin &amp; Storefront GraphQL</li><li>Headless</li><li>Cart, bundles &amp; upsells</li></ul>
+          </div>
+          <div class="card">
+            <div class="meta">03</div>
+            <h3>Frontend</h3>
+            <ul class="chips"><li>React</li><li>Next.js</li><li>Remix</li><li>Vite</li><li>Tailwind CSS</li><li>Framer Motion</li><li>Three.js</li></ul>
+          </div>
+          <div class="card">
+            <div class="meta">04</div>
+            <h3>Backend &amp; data</h3>
+            <ul class="chips"><li>Node.js</li><li>Express</li><li>GraphQL / Apollo</li><li>REST APIs</li><li>Socket.io</li><li>Prisma</li><li>Drizzle</li><li>PostgreSQL</li><li>Supabase</li><li>Zod</li></ul>
+          </div>
+          <div class="card">
+            <div class="meta">05</div>
+            <h3>AI &amp; integrations</h3>
+            <ul class="chips"><li>Vercel AI SDK</li><li>OpenAI / OpenRouter</li><li>MCP servers</li><li>Twilio</li><li>Stripe</li><li>Clerk auth</li><li>Trigger.dev jobs</li></ul>
+          </div>
+          <div class="card">
+            <div class="meta">06</div>
+            <h3>Apps, tooling &amp; performance</h3>
+            <ul class="chips"><li>SwiftUI (macOS)</li><li>Chrome extensions</li><li>Vercel</li><li>Docker</li><li>Playwright</li><li>Git</li><li>Core Web Vitals</li><li>CRO &amp; A/B testing</li><li>Technical SEO</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <span class="kicker">Projects</span>
+        <h2>Apps &amp; extensions <em>I've shipped</em>.</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="meta">Shopify app</div>
+            <h3>King Cart — Cart &amp; Upsell</h3>
+            <p>Slide-out cart with free-gift perks, targeted upsells, AI product suggestions and progress bars, without bloating the storefront.</p>
+            <ul class="chips"><li>Shopify app</li><li>Polaris</li><li>GraphQL</li></ul>
+            <a class="more" href="https://apps.shopify.com/king-cart-one-to-rule-em-all">Shopify App Store →</a>
+          </div>
+          <div class="card">
+            <div class="meta">Shopify app</div>
+            <h3>Product Blocks</h3>
+            <p>Drag-and-drop Online Store 2.0 blocks for trust badges, reviews and countdowns. No code, no theme edits.</p>
+            <ul class="chips"><li>Theme app extension</li><li>OS 2.0</li></ul>
+            <a class="more" href="https://apps.shopify.com/section-store-2">Shopify App Store →</a>
+          </div>
+          <div class="card">
+            <div class="meta">macOS app</div>
+            <h3>Reels Grabber</h3>
+            <p>Bulk-backs up Instagram and Facebook reels with a quality picker, date filters and retry for failed downloads.</p>
+            <ul class="chips"><li>SwiftUI</li><li>macOS</li></ul>
+            <a class="more" href="https://www.conversionsking.online/apps/reels-grabber">Project page →</a>
+          </div>
+          <div class="card">
+            <div class="meta">Chrome extension</div>
+            <h3>WA Translator</h3>
+            <p>Translates WhatsApp Web messages inline and on-device, with the original text always visible.</p>
+            <ul class="chips"><li>Chrome extension</li><li>On-device AI</li></ul>
+            <a class="more" href="https://www.conversionsking.online/wa-translator">Project page →</a>
+          </div>
+          <div class="card">
+            <div class="meta">Browser extension</div>
+            <h3>Superar</h3>
+            <p>Run your own keyboard shortcuts, JavaScript and CSS on any site. Privacy-first, no tracking, no backend.</p>
+            <ul class="chips"><li>Browser extension</li><li>JavaScript</li></ul>
+            <a class="more" href="https://www.conversionsking.online/superar">Project page →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" class="alt">
+      <div class="wrap">
+        <span class="kicker">Client work</span>
+        <h2>Stores <em>I've built</em>.</h2>
+        <ul class="clients">
+          <li><strong>MoxieLash</strong><p>Built from scratch on Shopify Plus and scaled a new category to an 8-figure DTC business.</p><a href="https://moxielash.com">moxielash.com</a></li>
+          <li><strong>ProLon</strong><p>Storefront revamp: rebuilt the conversion path, subscription flow and front-end speed.</p><a href="https://prolonlife.com">prolonlife.com</a></li>
+          <li><strong>L-Nutra Health</strong><p>Net-new digital flagship for a medical-grade nutrition brand.</p><a href="https://l-nutrahealth.com">l-nutrahealth.com</a></li>
+          <li><strong>Nutrition for Longevity</strong><p>Storefront redesign plus a custom patient meal-delivery portal with dietary logic.</p><a href="https://nutritionforlongevity.com">nutritionforlongevity.com</a></li>
+          <li><strong>OutcomeMD</strong><p>Performance-first marketing site for a patient-outcomes data network.</p><a href="https://outcomemd.com">outcomemd.com</a></li>
+          <li><strong>Moxie</strong><p>Expanded a lash brand into jewelry, fragrance and lifestyle under one store.</p><a href="https://moxie.com">moxie.com</a></li>
+          <li><strong>Freedom Bakery</strong><p>Bakery store with a custom cake configurator and in-cart fulfillment rules.</p><a href="https://freedombakery.com">freedombakery.com</a></li>
+          <li><strong>Motive Health</strong><p>Funnel restructure and an iterative A/B test program for an FDA-cleared device.</p><a href="https://mymotive.com">mymotive.com</a></li>
+          <li><strong>FriendshipCollar</strong><p>Full redesign and speed rebuild for a pet-and-owner accessories brand.</p><a href="https://friendshipcollar.com">friendshipcollar.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <span class="kicker">Experience</span>
+        <h2>Where I've <em>worked</em>.</h2>
+        <div class="xp">
+          <div class="when">2018 — now</div>
+          <div>
+            <h3>Founder &amp; developer, ConversionsKing</h3>
+            <p>Designing and building Shopify and headless stores for D2C brands, plus our own Shopify apps, a macOS app and browser extensions. Hands-on across themes, apps, backend and performance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="alt contact">
+      <div class="wrap">
+        <span class="kicker">Contact</span>
+        <h2>Let's <em>build something</em>.</h2>
+        <div class="ctas">
+          <a class="btn btn--primary" href="https://github.com/princeali7">GitHub →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Ali Raza</div>
+  </footer>
+</body>
+</html>
